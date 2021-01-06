@@ -38,7 +38,7 @@ function App() {
       setTodo(JSON.parse(data))
     }
   },[]);
-
+// test
   useEffect(() => {
     const todos = JSON.stringify(todo);
     localStorage.setItem('todos', todos)
