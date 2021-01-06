@@ -7,17 +7,22 @@
     display: flex;
     align-items: center;
     overflow: auto;
-    padding: 50px 0;
+    padding: 50px 15px;
 }
 #app {
     background-color: #fff;
+    width: 100%;
     max-width: 750px;
     flex-basis: 750px;
     margin: auto;
     font-size: 16px;
     border-radius: 5px;
 }
-
+@media(max-width: 767px) {
+    #app {
+        padding: 0 25px;
+    }
+}
 header {
     font-family: 'Pacifico', cursive;
     color: #351C53;
@@ -64,6 +69,11 @@ header {
     border: 0;
     font-family: inherit;
 
+}
+@media(max-width: 767px) {
+    .btn-default {
+        min-width: 100px;
+    }
 }
 .todo-box {
     margin-top: 50px;
